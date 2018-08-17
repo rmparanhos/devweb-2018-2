@@ -1,42 +1,42 @@
-1. Adicionar uma div com a classe container em torno do corpo do site (não deve incluir o menu e o rodapé).
+1. Adicionar uma div com a classe container em torno do corpo do site (não deve incluir o menu e o rodapé). DONE
 
-2. Acrescentar as classes navbar bg-light navbar-light ao elemento nav
+2. Acrescentar as classes navbar bg-light navbar-light ao elemento nav DONE
 
-3. Criar a div que irá envolver os links do menu principal e adicionar a classe navbar-nav a esta div
+3. Criar a div que irá envolver os links do menu principal e adicionar a classe navbar-nav a esta div DONE
 
-4. Adicionar as classes nav-item e nav-link a cada âncora.
+4. Adicionar as classes nav-item e nav-link a cada âncora. DONE
 
-5. Adicionar a classe navbar-expand-md ao elemento nav
+5. Adicionar a classe navbar-expand-md ao elemento nav DONE
 
-6. Adicionar uma div com a classe container logo abaixo do elemento nav.
+6. Adicionar uma div com a classe container logo abaixo do elemento nav. DONE
 
-7. Adicionar a classe active à âncora referente ao item de menu Home.
+7. Adicionar a classe active à âncora referente ao item de menu Home. DONE
 
-8. Adicionar uma âncora com a classe navbar-brand e com o texto "Rio de Janeiro", logo abaixo da div com a classe container.
+8. Adicionar uma âncora com a classe navbar-brand e com o texto "Rio de Janeiro", logo abaixo da div com a classe container. DONE
 
-9. Acrescentar a classe mr-auto à div com a classe navbar-nav.
+9. Acrescentar a classe mr-auto à div com a classe navbar-nav. DONE
 
-10. Podemos agora substituir o texto "Rio de Janeiro" por uma imagem adicionando o tag img:
+10. Podemos agora substituir o texto "Rio de Janeiro" por uma imagem adicionando o tag img: DONE
 
    <img src="images/logo.jpg" alt="logo" style="width: 50px;">
 
-11. Remover a entrada Home do menu.
+11. Remover a entrada Home do menu. DONE
 
-12. Acrescentar o elemento span a seguir, logo após a div com a classe navbar-nav:
+12. Acrescentar o elemento span a seguir, logo após a div com a classe navbar-nav: DONE
 
     <span class="navbar-text d-none d-xl-inline-block">As melhores excursões do Rio!</span>
 
-13. Remover o elemento <span> acrescentado no item 12 acima.
+13. Remover o elemento <span> acrescentado no item 12 acima. DONE
 
-14. Envolver a âncora relativa a cultura com a div abaixo:
+14. Envolver a âncora relativa a cultura com a div abaixo: DONE
 
     <div class="dropdown">...</div>
 
-15. Acrescentar loga abaixo da âncora relativa a cultura a div abaixo:
+15. Acrescentar logo abaixo da âncora relativa a cultura a div abaixo: DONE
 
     <div class="dropdown-menu">...</div>
 
-16. Dentro da div acima, acrescentar as âncoras abaixo:
+16. Dentro da div acima, acrescentar as âncoras abaixo: DONE
 
     <a class="dropdown-item" href="#">Museus</a>
     <a class="dropdown-item" href="#">Feiras</a>

@@ -1,95 +1,95 @@
-1. Adicionar uma div com a classe container em torno do corpo do site (não deve incluir o menu e o rodapé).
+1. Adicionar uma div com a classe container em torno do corpo do site (não deve incluir o menu e o rodapé). DONE
 
-2. Acrescentar as classes navbar bg-light navbar-light ao elemento nav
+2. Acrescentar as classes navbar bg-light navbar-light ao elemento nav DONE
 
-3. Criar a div que irá envolver os links do menu principal e adicionar a classe navbar-nav a esta div
+3. Criar a div que irá envolver os links do menu principal e adicionar a classe navbar-nav a esta div DONE
 
-4. Adicionar as classes nav-item e nav-link a cada âncora.
+4. Adicionar as classes nav-item e nav-link a cada âncora. DONE
 
-5. Adicionar a classe navbar-expand-md ao elemento nav
+5. Adicionar a classe navbar-expand-md ao elemento nav DONE
 
-6. Adicionar uma div com a classe container logo abaixo do elemento nav.
+6. Adicionar uma div com a classe container logo abaixo do elemento nav. DONE
 
-7. Adicionar a classe active à âncora referente ao item de menu Home.
+7. Adicionar a classe active à âncora referente ao item de menu Home. DONE
 
-8. Adicionar uma âncora com a classe navbar-brand e com o texto "Rio de Janeiro", logo abaixo da div com a classe container.
+8. Adicionar uma âncora com a classe navbar-brand e com o texto "Rio de Janeiro", logo abaixo da div com a classe container. DONE
 
-9. Acrescentar a classe mr-auto à div com a classe navbar-nav.
+9. Acrescentar a classe mr-auto à div com a classe navbar-nav. DONE
 
-10. Podemos agora substituir o texto "Rio de Janeiro" por uma imagem adicionando o tag img:
+10. Podemos agora substituir o texto "Rio de Janeiro" por uma imagem adicionando o tag img: DONE
 
    <img src="images/logo.jpg" alt="logo" style="width: 50px;">
 
-11. Remover a entrada Home do menu.
+11. Remover a entrada Home do menu. DONE
 
-12. Acrescentar o elemento span a seguir, logo após a div com a classe navbar-nav:
+12. Acrescentar o elemento span a seguir, logo após a div com a classe navbar-nav: DONE
 
     <span class="navbar-text d-none d-xl-inline-block">As melhores excursões do Rio!</span>
 
-13. Remover o elemento <span> acrescentado no item 12 acima.
+13. Remover o elemento <span> acrescentado no item 12 acima. DONE
 
-14. Envolver a âncora relativa a cultura com a div abaixo:
+14. Envolver a âncora relativa a cultura com a div abaixo: DONE
 
     <div class="dropdown">...</div>
 
-15. Acrescentar logo abaixo da âncora relativa a cultura a div abaixo:
+15. Acrescentar logo abaixo da âncora relativa a cultura a div abaixo:  DONE
 
     <div class="dropdown-menu">...</div>
 
-16. Dentro da div acima, acrescentar as âncoras abaixo:
+16. Dentro da div acima, acrescentar as âncoras abaixo: DONE
 
     <a class="dropdown-item" href="#">Museus</a>
     <a class="dropdown-item" href="#">Feiras</a>
     <a class="dropdown-item" href="#">Bibliotecas</a>
     <a class="dropdown-item" href="#">Livrarias</a>
 
-17. Acrescentar à âncora relativa a cultura a classe: dropdown-toggle e o atributo data-toggle com o valor dropdown.
+17. Acrescentar à âncora relativa a cultura a classe: dropdown-toggle e o atributo data-toggle com o valor dropdown. DONE
 
-18. Comente o elamento img e acrescente o elemento header abaixo, logo após ao elemento <img> que foi comentado.
+18. Comente o elamento img e acrescente o elemento header abaixo, logo após ao elemento <img> que foi comentado. DONE
 
     <header></header>
 
     Acrescente a classe bgimage ao elemento <header> e remova o comentário referente à classe .bgimage no arquivo
     css/styles.css.
 
-19. Acrescentar a classe fixed-top ao elemento nav.
+19. Acrescentar a classe fixed-top ao elemento nav. DONE
 
-20. Acrescentar as classes e o estilo abaixo ao elemento header:
+20. Acrescentar as classes e o estilo abaixo ao elemento header: DONE
 
     class="d-none d-md-block" style="margin-top: 55px;"
 
-21. E acrescentar a div abaixo logo após ao elemento header.
+21. E acrescentar a div abaixo logo após ao elemento header. DONE
 
     <div style="margin-top: 55px;" class="d-block d-md-none"></div>
 
-22. Envolver a div com a classe navbar-nav com a div abaixo:
+22. Envolver a div com a classe navbar-nav com a div abaixo: DONE
 
     <div class="collapse navbar-collapse" id="menu">...</div>
 
-23. Acrescentar o botão abaixo logo após a âncora com a classe navbar-brand:
+23. Acrescentar o botão abaixo logo após a âncora com a classe navbar-brand: DONE
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
         <span class="navbar-toggler-icon"></span>
     </button>
 
-24. Acrescentar o elemento <span> abaixo, após a paravra Mapas:
+24. Acrescentar o elemento <span> abaixo, após a paravra Mapas: DONE
 
     <span class="oi oi-globe"></span>
 
-25. Acrescentar uma div com a classe jumbotron envolvendo o elemento h2 e o parágrafo referente a marcos da cidade:
+25. Acrescentar uma div com a classe jumbotron envolvendo o elemento h2 e o parágrafo referente a marcos da cidade: DONE
 
     <div class="jumbotron">
         ...
     </div>
 
-26. Remover o comentário da classe jumbotron no arquivo styles.css:
+26. Remover o comentário da classe jumbotron no arquivo styles.css: DONE
 
     .jumbotron {
         font-size: 24px;
         margin-top: 20px;
     }
 
-27. Acrescentar a div abaixo após a div referente aos marcos da cidade:
+27. Acrescentar a div abaixo após a div referente aos marcos da cidade: DONE
 
     <div class="card-group">
         <!-- Use card groups to render cards as a single, attached element with equal width and height columns. -->
@@ -137,25 +137,25 @@
         </div>
     </div>
 
-28. Acrescentar a div abaixo em torno de cada um dos 6 cards:
+28. Acrescentar a div abaixo em torno de cada um dos 6 cards: DONE
 
     <div class="col-lg-4 col-md-6">
         ...
     </div>
 
-29. Acrescentar a div row em torno do card-group:
+29. Acrescentar a div row em torno do card-group: DONE
 
     <div class="row">
        ...
     </div>
 
-30. Acrescentar a classe mb-4 a cada div com a classe card:
+30. Acrescentar a classe mb-4 a cada div com a classe card: DONE
 
     <div class="card mb-4">
        ...
     </div>
 
-31. Acrescentar tooltip e popover
+31. Acrescentar tooltip e popover DONE
 
     <a href="#" data-toggle="tooltip" data-placement="top" title="Tom Jobim: Copacabana, princesinha do mar Pelas manhãs tu és a vida a cantar E a tardinha o sol poente
         Deixa sempre uma saudade na gente">"Princesinha do Mar"</a>
@@ -167,7 +167,7 @@
        data-content="Filme franco-britânico de acção, aventura, espionagem e ficção científica de 1979, o 11.º da série
        James Bond com Roger Moore no papel do agente secreto.">007 contra o Foguete da Morte.</a>
 
-32. Retire os comentários no arquivo js/script.js referentes a tooltip e popover.
+32. Retire os comentários no arquivo js/script.js referentes a tooltip e popover. DONE
 
 33. Acrescentar as linhas abaixo que implementam um accordion para cada uma das 3 excursões:
 

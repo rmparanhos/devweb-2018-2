@@ -169,7 +169,7 @@
 
 32. Retire os comentários no arquivo js/script.js referentes a tooltip e popover. DONE
 
-33. Acrescentar as linhas abaixo que implementam um accordion para cada uma das 3 excursões:
+33. Acrescentar as linhas abaixo que implementam um accordion para cada uma das 3 excursões: DONE
 
     <h4 id="excursoes">Nossas Excursões</h4>
 
@@ -231,7 +231,7 @@
         </div>
     </div>
 
-34. Acrescentar a classe mb-3 ao elemento h4 logo antes do accordion:
+34. Acrescentar a classe mb-3 ao elemento h4 logo antes do accordion: DONE
 
     class="mb-3"
 
@@ -266,7 +266,7 @@
         </div>
     </div>
 
-36. Retire os comentários no arquivo styles.css referentes à classe media do elemento img:
+36. Retire os comentários no arquivo styles.css referentes à classe media do elemento img: DONE
 
     .media img {
         width: 180px;
@@ -274,34 +274,34 @@
         border-radius: 6%;
     }
 
-37. Envolver cada div com a classe media com a div abaixo:
+37. Envolver cada div com a classe media com a div abaixo: DONE
 
     <div class="col-lg-6">
         ...
     </div>
 
-38. Envolver estas 4 divs com a div abaixo:
+38. Envolver estas 4 divs com a div abaixo: DONE
 
     <div class="row">
         ...
     </div>
 
-39. Retire os comentários no arquivo styles.css referentes a dispositivos com até 480px.
+39. Retire os comentários no arquivo styles.css referentes a dispositivos com até 480px. DONE
 
     @media (max-width: 480px)
 
-40. Acrescentar a div abaixo logo após a div com a classe row do primeiro card:
+40. Acrescentar a div abaixo logo após a div com a classe row do primeiro card: DONE
 
     <div>
         <button type="button" class="btn btn-primary btn-md btn-block">Mais Informações</button>&nbsp;
         <a href="cadastro.html" class="btn btn-secondary btn-md btn-block">Contratar</a>
     </div>
 
-41. Acrescentar as classes abaixo à div acima:
+41. Acrescentar as classes abaixo à div acima: DONE
 
     class="altura-da-linha mt-2"
 
-42. Acrescentar as linhas abaixo após o accordion:
+42. Acrescentar as linhas abaixo após o accordion: DONE
 
     <h4>Depoimentos sobre Excursões</h4>
     <blockquote class="blockquote">
@@ -322,7 +322,7 @@
         <footer class="blockquote-footer">Pedro Arnaldo Soares</footer>
     </blockquote>
 
-43. Acrescentar a classe mb-3 ao elemento h4 acima.
+43. Acrescentar a classe mb-3 ao elemento h4 acima. DONE
 
 44. Envolver cada elemento blockquote com a div abaixo:
 
@@ -330,13 +330,13 @@
         ...
     </div>
 
-45. Envolver as 3 divs acima com a div abaixo:
+45. Envolver as 3 divs acima com a div abaixo: DONE
 
     <div class="row">
         ...
     </div>
 
-46. Retire os comentários no arquivo styles.css referentes ao elemento blockquote:
+46. Retire os comentários no arquivo styles.css referentes ao elemento blockquote: DONE
 
     blockquote {
         border-left: 8px solid #ccc;

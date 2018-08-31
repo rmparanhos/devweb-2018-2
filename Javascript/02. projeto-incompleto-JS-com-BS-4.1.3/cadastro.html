@@ -51,7 +51,7 @@
 
         <h4 class="text-center mt-4">Dados Pessoais</h4>
 
-        <form method="get">
+        <form id="id_form" method="get" novalidate>
 
             <div class="form-group">
                 <label for="id_nome">Nome</label>
@@ -63,6 +63,7 @@
                 <label for="id_email">Email</label>
                 <input id="id_email" type="email" name="email" class="form-control" required>
                 <div id="id_email_required" class="invalid-feedback">Campo de preenchimento obrigatorio</div>
+                <div id="id_email_valido" class="invalid-feedback">Email invalido</div>
             </div>
 
             <div class="form-group">
@@ -77,6 +78,7 @@
                 <div id="id_faixa_etaria_required" class="invalid-feedback">Campo de preenchimento obrigatorio</div>
             </div>
 
+
             <div class="mt-3 mb-1">Sexo</div>
 
             <div class="form-check">
@@ -90,25 +92,95 @@
             </div>
             <div id="id_sexo_required" class="invalid-feedback">Campo de preenchimento obrigatorio</div>
 
+
             <div class="mt-3 mb-1">Preferencias</div>
 
-            <div class="form-check">
-                <input id="id_masculino" type="radio" name="sexo" value="N" class="from-check-input">
-                <label for="id_masculino" class="form-check-label">Masculino</label>
+            <div class="form-group form-check" style="margin-bottom: 3px;">
+                <input id="id_esporte" type="checkbox" name="esporte" class="from-check-input">
+                <label for="id_esporte" class="form-check-label">Esporte</label>
+            </div>
+            <div class="form-group form-check" style="margin-bottom: 3px;">
+                <input id="id_cinema" type="checkbox" name="cinema" class="from-check-input">
+                <label for="id_cinema" class="form-check-label">Cinema</label>
+            </div>
+            <div class="form-group form-check" style="margin-bottom: 3px;">
+                <input id="id_literatura" type="checkbox" name="literatura" class="from-check-input">
+                <label for="id_literatura" class="form-check-label">Literatura</label>
             </div>
 
-            <div class="form-check">
-                <input id="id_feminino" type="radio" name="sexo" value="F" class="from-check-input">
-                <label for="id_feminino" class="form-check-label">Feminino</label>
-            </div>
-            <div id="id_sexo_required" class="invalid-feedback">Campo de preenchimento obrigatorio</div>
+            <div id="id_preferencias_required" class="invalid-feedback">Selecione pelo menos uma preferencia</div>
 
-            <button id="id_botao" class="btn btn-primary" type="submit">Enviar</button>
+
+            <button id="id_botao" class="btn btn-primary mt-4 pl-4 pr-4" type="submit">Enviar</button>
         </form>
 
     </div>
     <script>
+        document.querySelector("#id_nome").addEventListener("blur", validaNomeFunction, false)
+        document.querySelector("#id_email").addEventListener("blur", validaEmailFunction, false)
 
+        document.querySelector("#id_form").addEventListener("submit", function(s){validaTudoFunction(e)}, false)
+
+        function validaTudoFunction(e){
+            e.preventDefault();
+            let erroNome = validaNomeFunction();
+
+            if(nomeValido){
+                alert("Tudo OK!")
+            }
+            else{
+                alert("Deu erro!")
+            }
+        }
+
+        function validaNomeFunction(){
+            let nome =  document.querySelector("#id_nome");
+
+            if (nome.value === '') {
+                nome.classList.add("is-invalid")
+                nome.classList.remove("is-valid")
+                document.querySelector("#id_nome_required").classList.remove("d-none")
+                return false;
+            }
+            else{
+                nome.classList.remove("is-invalid")
+                nome.classList.add("is-valid")
+                document.querySelector("#id_nome_required").classList.add("d-none")
+                return true;
+            }
+        }
+
+        function emailValido(email) {
+            var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(email);
+        }
+
+        function validaEmailFunction(){
+            let email =  document.querySelector("#id_email");
+
+            if (email.value === '') {
+                email.classList.add("is-invalid")
+                email.classList.remove("is-valid")
+                document.querySelector("#id_email_required").classList.remove("d-none")
+                document.querySelector("#id_email_valido").classList.add("d-none")
+                return false;
+            }
+            else{
+                document.querySelector("#id_email_required").classList.add("d-none")
+                if(emailValido(email.value)){
+                    email.classList.remove("is-invalid")
+                    email.classList.add("is-valid")
+                    document.querySelector("#id_email_valido").classList.add("d-none")
+                    return true;
+                }
+                else{
+                    email.classList.add("is-invalid")
+                    email.classList.remove("is-valid")
+                    document.querySelector("#id_email_valido").classList.remove("d-none")
+                    return false;
+                }
+            }
+        }
     </script>
 
 <div class='footer'>

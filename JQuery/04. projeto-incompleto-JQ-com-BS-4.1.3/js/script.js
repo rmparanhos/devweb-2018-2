@@ -168,10 +168,11 @@ $("document").ready(function() {
 
     // Modificar o email do empregado número 1 de patriciamaria@yahoo.com.br para patricia@gmail.com
     let numero2 = "1"
+    let novoEmail = "patricia@gmail.com"
     $("#btn-1").click(function () {
-        $("#tab1 tbody td d-none").each(function (indice, elemento){
-            if($(elemento).val() === numero2){
-                $(elemento).next().next().next().html()
+        $("#tab1 tbody td.d-none").each(function (indice, elemento){
+            if($(elemento).text() === numero2){
+                $(elemento).next().next().next().html(novoEmail)
             }
         })
 
